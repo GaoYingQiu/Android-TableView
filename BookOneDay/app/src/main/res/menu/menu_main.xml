@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".activity.controllers.TabMainActivity">
+
+<item android:id="@+id/action_edit"
+    android:title="测试"
+    android:orderInCategory="80"
+    android:icon="@drawable/nav_audio_play"
+    app:showAsAction="ifRoom" />
+
+<item android:id="@+id/action_share"
+    android:title="播放"
+    android:orderInCategory="90"
+    android:icon="@drawable/nav_audio_play"
+    app:showAsAction="ifRoom" />
+
+</menu>

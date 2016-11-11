@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lj_color_white"
+    style="@style/MatchWrap.Vertical">
+
+        <TextView
+            android:id="@+id/menu_item_sectionHeader"
+            style="@style/MatchWrap"
+            android:background="#EEEEEE"
+            android:layout_height="15dp"
+            android:textColor="#3c3c3c"
+            />
+        <LinearLayout
+            android:id="@+id/sectionHeader_today_recommend"
+            android:orientation="horizontal"
+            android:background="@color/lj_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/lj_color_black"
+                android:textSize="18sp"
+                android:text="今日推荐"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp">
+
+        <!-- 书图片 -->
+        <ImageView
+            android:layout_weight="3"
+            android:id="@+id/home_recommend_book_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scaleType="fitXY"
+            />
+        <!-- scaleType属性会自动拉伸图片到imageview的尺寸大小-->
+
+
+        <!-- 右侧文字信息 -->
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+                <TextView
+                    android:id="@+id/home_recommend_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/lj_color_black"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/home_recommend_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/lj_color_gray1"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/home_recommend_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/lj_color_gray1"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/home_recommend_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/lj_color_gray1"
+                    android:textSize="11sp"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- cell bottom line -->
+    <TextView
+        android:id="@+id/cell_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.48dp"
+        android:background="@color/lj_color_line"
+        />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:id="@+id/rl_modulename_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lj_color_background">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:id="@+id/rl_modulename_refresh_recycle_view"/>
+
+</cn.bingoogolapple.refreshlayout.BGARefreshLayout>

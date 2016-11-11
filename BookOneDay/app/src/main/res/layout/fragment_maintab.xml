@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/lj_color_orange"
+        app:titleTextColor="@color/lj_color_white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+        <TextView
+            android:id="@+id/nav_audio_date"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/nav_date"
+            android:textColor="@color/lj_color_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:id="@+id/projectToolBarTitle"
+            android:textColor="@color/lj_color_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/nav_audio_play"
+            android:layout_gravity="right"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:src="@drawable/nav_audio_play"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.shizhefei.view.viewpager.SViewPager
+        android:id="@+id/tabmain_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/lj_color_white"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#cbcbcb"/>
+
+        <com.shizhefei.view.indicator.FixedIndicatorView
+            android:background="@color/tab_main_toolbar"
+            android:id="@+id/tabmain_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

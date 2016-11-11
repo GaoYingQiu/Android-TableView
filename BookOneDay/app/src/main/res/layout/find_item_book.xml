@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/find_book_thumb"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/find_book_title"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/lj_color_black"
+        android:text="图书标题"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/find_book_readCoin"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lj_color_gray1"
+        android:text="20读书币"
+        android:textSize="12dp" />
+
+</LinearLayout>

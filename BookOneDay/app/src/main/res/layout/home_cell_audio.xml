@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lj_color_white"
+    style="@style/MatchWrap.Vertical"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            >
+            <ImageView
+                android:id="@+id/home_cell_audio_playing"
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:src="@drawable/home_cell_audio_playing"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="7dp"
+            >
+            <TextView
+                android:id="@+id/home_audio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/home_audio_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/lj_color_gray1"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+             >
+            <ImageView
+                android:id="@+id/home_message_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:clickable="true"
+                android:src="@drawable/home_audio_markfill"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 图片 -->
+
+    <!-- 进度条 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:background="@color/lj_color_white"
+        android:id="@+id/progressTotalLine"
+        >
+        <TextView
+            android:id="@+id/progressLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@color/lj_color_orange"
+            />
+    </LinearLayout>
+
+    <!-- cell bottom line -->
+    <TextView
+        android:id="@+id/cell_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.48dp"
+        android:background="@color/lj_color_line"
+        />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lj_color_white">
+
+
+    <LinearLayout
+        android:id="@+id/top_date_close"
+        android:background="@color/lj_color_orange"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+       >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/nav_close"
+            android:layout_width="28dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/nav_close"
+            android:layout_height="28dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/lj_color_white"
+            android:text="日期" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/lj_color_white"
+            android:textSize="16dp"
+            android:text="今天" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_week"
+        android:layout_below="@id/top_date_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F8F8F8"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:paddingBottom="20dp"
+        android:id="@+id/flipper1"
+        android:background="#F8F8F8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_week" />
+    <TextView 
+        android:id="@+id/tv_date"
+       	android:layout_below="@id/flipper1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016年1月20日"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

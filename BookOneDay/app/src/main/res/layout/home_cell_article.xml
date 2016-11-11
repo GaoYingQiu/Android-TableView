@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lj_color_white"
+    style="@style/MatchWrap.Vertical"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/menu_item_sectionHeader"
+        style="@style/MatchWrap"
+        android:background="#EEEEEE"
+        android:layout_height="15dp"
+        android:textColor="#3c3c3c"
+        />
+    <LinearLayout
+        android:id="@+id/sectionHeader_today_recommend"
+        android:orientation="horizontal"
+        android:background="@color/lj_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        >
+        <ImageView
+            android:id="@+id/menu_iconImageView"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:src="@drawable/home_eye"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/lj_color_black"
+            android:textSize="18sp"
+            android:text="今日值得花时间 | 看"/>
+    </LinearLayout>
+
+     <ImageView
+            android:id="@+id/home_article_line"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/home_article_line"
+        />
+
+    <TextView
+        android:id="@+id/home_recommend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lj_color_black"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:text="如果你问一个二十多岁出头的年轻人，是想要被催促着买房买车结婚生子的生活，还是谈论着梦想改变世界、让
+        自己一辈子不白活的生活大多数会想要 后者，却最终选择前者。这就像苹果和微软一样，大多数人都喜欢苹果，
+        但他们都在用windows操作系统。"
+        />
+
+    <TextView
+        android:gravity="right"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/home_article_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/lj_color_gray"
+        android:textSize="15sp"
+        android:text="来源《创业者杂志》"
+        />
+    <!-- 来源 -->
+
+    <!-- 点赞，分享，阅读 -->
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+    <!-- cell bottom line -->
+    <TextView
+        android:id="@+id/cell_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.48dp"
+        android:background="@color/lj_color_line"
+        />
+</LinearLayout>

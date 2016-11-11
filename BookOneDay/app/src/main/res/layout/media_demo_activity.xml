@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button android:id="@+id/startPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start playing Audio" 
+        android:onClick="startPlayingAudio" />
+    <Button android:id="@+id/pausePlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pause playing Audio" 
+        android:onClick="pausePlayingAudio" />
+	<Button android:id="@+id/restartPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restart playing Audio" 
+        android:onClick="restartPlayingAudio" />
+	<Button android:id="@+id/stopPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop playing Audio" 
+        android:onClick="stopPlayingAudio" />
+	<TextView android:id="@+id/textMediaMedo"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+</LinearLayout>

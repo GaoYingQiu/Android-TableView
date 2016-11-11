@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公共的颜色 -->
+    <color name="lj_color_orange">#FE8439</color>
+    <color name="lj_color_orange1">#EE8544</color>
+    <color name="lj_color_white">#ffffff</color>
+    <color name="lj_color_background">#ebebeb</color>
+    <color name="lj_color_black">#333333</color>
+    <color name="lj_color_black1">#636363</color>
+    <color name="lj_color_green">#86C848</color>
+    <color name="lj_color_red">#ff1f16</color>
+    <color name="lj_color_gray">#666666</color>
+    <color name="lj_color_gray1">#999999</color>
+    <color name="lj_color_gray2">#cccccc</color>
+    <color name="lj_color_gray3">#dfdfdf</color>
+    <color name="lj_color_line">#DBDBDB</color>
+
+    <!-- Tab 文字选中的颜色 -->
+    <color name="tab_main_text_normal">@android:color/darker_gray</color>
+    <color name="tab_main_text_selected">@color/lj_color_orange</color>
+    <color name="tab_main_toolbar">@color/lj_color_white</color>
+
+    <!-- 项目首页slide Tab 选择的颜色 -->
+    <color name="project_slide_tab_text_normal">@color/lj_color_black</color>
+    <color name="project_slide_tab_text_selected">@color/lj_color_orange</color>
+
+    <!-- 项目进度圈 -->
+    <color name="title_txt_color">#f1f1f3</color>
+    <color name="circle_color">#323a45</color>
+    <color name="ring_color">#14b9d6</color>
+</resources>

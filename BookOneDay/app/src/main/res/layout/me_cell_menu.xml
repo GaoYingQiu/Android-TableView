@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="@drawable/cell_item_selector"
+    >
+    <TextView
+        android:id="@+id/menu_item_sectionHeader"
+        style="@style/MatchWrap"
+        android:background="#EEEEEE"
+        android:layout_height="15dp"
+        android:textColor="#3c3c3c"
+      />
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:layout_height="50dp"
+        >
+        <ImageView
+            android:id="@+id/menu_iconImageView"
+            android:layout_gravity="center_vertical"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="14dp"
+            />
+        <TextView
+            android:id="@+id/menu_titleLabel"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/lj_color_black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            style="@style/WrapWrap"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/menu_detailLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/arrow"
+                android:gravity="left"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textColor="@color/lj_color_gray1"
+                />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/me_arrow_right"
+                android:layout_alignParentRight = "true"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- cell bottom line -->
+    <TextView
+        android:id="@+id/cell_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.48dp"
+        android:layout_marginLeft="45dp"
+        android:background="@color/lj_color_line"
+        />
+</LinearLayout>

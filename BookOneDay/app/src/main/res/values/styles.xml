@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- （工具条）颜色 -->
+        <item name="colorPrimary">#4876FF</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">#cd2c2d</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@color/lj_color_background</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DateControllerTransparent" parent="android:Theme.Light">
+        <!--将Activity的Theme设置成透明-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

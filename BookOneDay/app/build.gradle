@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.lvj.bookoneday"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    //Http请求
+    compile files('libs/fastjson-1.1.37.jar')
+    //json解析
+    compile files('libs/butterknife-7.0.1.jar')
+    //替换findViewById
+    compile files('libs/ViewpagerIndicator_1.0.2.jar')
+    //tab
+    compile files('libs/android-smart-image-view-1.0.0.jar')
+    //图片缓存优化
+    //bga refresh
+    compile 'com.android.support:recyclerview-v7:23.+'
+    compile 'cn.bingoogolapple:bga-adapter:1.0.7@aar'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.0.7@aar'
+    compile 'cn.bingoogolapple:bga-banner:2.0.3@aar'
+    compile files('libs/pushservice-4.5.6.88.jar')
+    compile project(':sweetsheet')
+}

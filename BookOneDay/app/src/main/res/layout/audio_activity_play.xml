@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/audio_activity_play_relative_layout"
+               >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/test_banner"
+            android:orientation="vertical"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/music_back"
+                android:layout_width="25dp"
+                android:src="@drawable/nav_back"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+        <!-- 上半部分-->
+
+        <LinearLayout
+            android:background="#444444"
+             style="@style/MatchWrap.Vertical">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="5dp"
+                  android:paddingRight="5dp"
+                  android:paddingBottom="5dp"
+                  android:paddingTop="15dp"
+                  >
+                  <TextView
+                      android:id="@+id/audio_progress_time"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="left"
+                      android:layout_weight="1"
+                      android:text="00:02"
+                      android:textColor="@color/lj_color_gray2"
+                      android:textSize="13sp"
+                      android:textStyle="bold" />
+                  <TextView
+                      android:id="@+id/audio_total_time"
+                      android:layout_weight="1"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:text="04:12"
+                      android:textColor="@color/lj_color_gray2"
+                      android:textSize="13sp"
+                      android:textStyle="bold" />
+              </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/audio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="有些问题不是用解决的"
+                android:textColor="@color/lj_color_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/next_audio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="下一条：你的对手到底是谁？"
+                android:textColor="@color/lj_color_gray1"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                style="@style/MatchWrap.Horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:src="@drawable/music_last"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:layout_height="35dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:src="@drawable/music_play"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:src="@drawable/music_next"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:layout_height="35dp"/>
+            </LinearLayout>
+            <!-- music play icon -->
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/audio_list"
+                    android:layout_width="25dp"
+                    android:src="@drawable/music_list"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/home_audio_text"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"/>
+                <ImageView
+                    android:layout_width="23dp"
+                    android:src="@drawable/music_heart"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="23dp"/>
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/home_share"
+                    android:layout_gravity="right"
+                    android:layout_height="23dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 下半部分 -->
+    </LinearLayout>
+</RelativeLayout>
